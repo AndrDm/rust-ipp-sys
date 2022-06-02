@@ -35,3 +35,17 @@ This crate is part of the `ipp-sys` Rust Intel IPP bindings. See
 
     # On all platforms (use %IPPROOT% on Windows)
     bindgen $IPPROOT/include/ipp.h --default-enum-style  "moduleconsts" --with-derive-partialeq --distrust-clang-mangling -o src/ipp_2019.rs
+
+## Regnerating the 2021 bindings:
+
+    # set IPPROOT env var on windows
+    # ToDo Check it "c:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019\windows\ipp\bin\ippvars.bat" intel64
+
+    # set IPPROOT env var on linux
+    source /opt/intel/oneapi/ipp/latest/env/vars.sh -arch intel64 -platform linux
+
+    # set IPPROOT env var on mac
+    source /opt/intel/compilers_and_libraries_2019/mac/bin/compilervars.sh -arch intel64 -platform mac
+
+    # On all platforms (use %IPPROOT% on Windows)
+    bindgen $IPPROOT/include/ipp.h --default-enum-style  "moduleconsts" --with-derive-partialeq --distrust-clang-mangling -o src/ipp_2019.rs

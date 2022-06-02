@@ -4,6 +4,10 @@ All user visible changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/), as described
 for Rust libraries in [RFC #1105](https://github.com/rust-lang/rfcs/blob/master/text/1105-api-evolution.md)
 
+02-JUN-2022
+Intel OneAPI (IPP 2021.6.0) support
+
+
 ## [0.4.5] - 2019-11-23
 
 ### Fixed

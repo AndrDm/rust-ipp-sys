@@ -28,5 +28,6 @@ fn main() {
     ipp_assert!(ipp_sys::ippiSet_8u_C1R( 10, image.as_mut_ptr(), W, size));
     assert!(image[0]==10);
 
+    println!("Image filled with constant = {}", image[0]);
     println!("Minimal IPP link and execute tested ok (version {}.{}).", linked_version_major, linked_version_minor);
 }

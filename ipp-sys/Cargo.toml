@@ -7,11 +7,11 @@ repository = "https://github.com/astraw/ipp-sys"
 license = "MIT/Apache-2.0"
 categories = ["external-ffi-bindings"]
 readme = "README.md"
-edition = "2018"
+edition = "2021"
 
 [package.metadata.docs.rs]
 no-default-features = true
-features = [ "2019" ]
+features = [ "2021" ]
 
 [dependencies]
 ipp-headers-sys = { version = "0.4.3", path = "../ipp-headers-sys" }
@@ -29,3 +29,4 @@ do-linking = ["link-ippcore", "link-ippcv", "link-ippi", "link-ipps", "link-ippv
 2017=["ipp-headers-sys/2017"]
 2018=["ipp-headers-sys/2018"]
 2019=["ipp-headers-sys/2019"]
+2021=["ipp-headers-sys/2021"]

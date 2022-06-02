@@ -25,6 +25,11 @@ set using a tool provided by Intel with IPP and run as follows.
 
 On Linux:
 
+OneAPI (2021):
+```
+source /opt/intel/oneapi/ipp/latest/env/vars.sh -arch intel64 -platform linux
+```
+2019:
 ```
 source /opt/intel/compilers_and_libraries_2019/linux/ipp/bin/ippvars.sh -arch intel64 -platform linux
 ```

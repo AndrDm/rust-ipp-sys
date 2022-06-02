@@ -1,5 +1,3 @@
-[![crates.io](https://meritbadge.herokuapp.com/ipp-sys)](https://crates.io/crates/ipp-sys)
-
 # ipp-sys - Bindings to Intel Integrated Performance Primitives (Intel IPP).
 
 This directory contains several crates:
@@ -31,8 +29,16 @@ Use the `2017`, `2018`, or `2019` cargo feature to use IPP 2017, 2018, or
 
 ## Download IPP
 
-Get IPP from https://software.intel.com/en-us/intel-ipp
+as part of OneAPI toolkit
+https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit-download.html
 
+IPP standalone:
+https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#ipp
+
+Install Using Package Managers (linux)
+https://www.intel.com/content/www/us/en/develop/documentation/installation-guide-for-intel-oneapi-toolkits-linux/top/installation/install-using-package-managers.html
+
+Get IPP from https://software.intel.com/en-us/intel-ipp
 ## Usage
 
 Compile IPP statically into your app by setting environment variable
@@ -43,7 +49,13 @@ used by the `build.rs` files to find your IPP installation. Typically, this is
 set using a tool provided by Intel with IPP and run as follows.
 
 On Linux:
+set IPPROOT env var
 
+OneAPI (2021)
+```
+source /opt/intel/oneapi/ipp/latest/env/vars.sh -arch intel64 -platform linux
+```
+2019
 ```
 source /opt/intel/compilers_and_libraries_2019/linux/ipp/bin/ippvars.sh -arch intel64 -platform linux
 ```
