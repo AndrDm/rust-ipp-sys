@@ -1,4 +1,5 @@
-# ipp-sys - Bindings to Intel Integrated Performance Primitives (Intel IPP).
+# rust-ipp-sys - Bindings to Intel Integrated Performance Primitives (Intel IPP).
+(forked from github.com/astraw/ipp-sys)
 
 This directory contains several crates:
 
@@ -24,8 +25,8 @@ This crate provides wrappers of the Intel Integrated Performance Primitives
 
 ## Version support
 
-Use the `2017`, `2018`, or `2019` cargo feature to use IPP 2017, 2018, or
-2019 respectively.
+Use the `2017`, `2018`, `2019` or `2021` cargo feature to use IPP 2017, 2018, 2019, or
+2021 respectively.
 
 ## Download IPP
 
