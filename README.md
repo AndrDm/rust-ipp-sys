@@ -68,7 +68,15 @@ source /opt/intel/compilers_and_libraries_2019/mac/bin/compilervars.sh -arch int
 ```
 
 On Windows:
-
+OneAPI (2021)
+```
+%ComSpec% /E:ON /K ""C:\Program Files (x86)\Intel\oneAPI\setvars.bat" intel64 vs2022"
+```
+or
+```
+%ComSpec% /E:ON /K ""C:\Program Files (x86)\Intel\oneAPI\setvars.bat" intel64"
+```
+2019
 ```
 "C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019\windows\ipp\bin\ippvars.bat" intel64
 ```
