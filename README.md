@@ -49,7 +49,7 @@ You must set the `IPPROOT` environment variable at compilation time. This is
 used by the `build.rs` files to find your IPP installation. Typically, this is
 set using a tool provided by Intel with IPP and run as follows.
 
-On Linux:
+### On Linux:
 set IPPROOT env var
 
 OneAPI (2021)
@@ -61,13 +61,7 @@ source /opt/intel/oneapi/ipp/latest/env/vars.sh -arch intel64 -platform linux
 source /opt/intel/compilers_and_libraries_2019/linux/ipp/bin/ippvars.sh -arch intel64 -platform linux
 ```
 
-On Mac:
-
-```
-source /opt/intel/compilers_and_libraries_2019/mac/bin/compilervars.sh -arch intel64 -platform mac
-```
-
-On Windows:
+### On Windows:
 OneAPI (2021)
 ```
 %ComSpec% /E:ON /K ""C:\Program Files (x86)\Intel\oneAPI\setvars.bat" intel64 vs2022"
@@ -79,6 +73,12 @@ or
 2019
 ```
 "C:\Program Files (x86)\IntelSWTools\compilers_and_libraries_2019\windows\ipp\bin\ippvars.bat" intel64
+```
+
+On Mac:
+
+```
+source /opt/intel/compilers_and_libraries_2019/mac/bin/compilervars.sh -arch intel64 -platform mac
 ```
 
 In `Cargo.toml`, include `ipp-sys` as a dependency with a feature to select
